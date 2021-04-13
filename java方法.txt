@@ -1,0 +1,63 @@
+1.计算面积
+int area=getArea (3,5);
+        System.out.println("the area is" + area);
+    }
+    public static int getArea (int x,int y){
+        int temp=x*y;
+        return temp;
+2.用图形表示矩形
+printReectangle(x,y);(xy表示矩形的高和宽)
+  public static void printRectangle(int weigut,int width){
+for(int i=0;i<weight;i++){
+for(int j=0;j<width;j++){
+System.out.print("*");
+}
+System.out.print("\n");
+)
+System.out.print("\n");
+}
+}
+3int sum1= add (1,2);
+        int sum2 = add (1,2,3);
+        double sum3 = add (1.2,3.4 );
+        System.out.println("sum1="+sum1);
+        System.out.println("sum2="+sum2);
+        System.out.println("sum3="+sum3);
+    }
+    //下面方法实现两个整数相加
+    public static int add (int x,int y){
+        return x+y;
+    }
+    //下面方法实现三个整数相加
+    public static int add (int x,int y,int z){
+        return x+y+z ;
+    }
+    //下面方法实现两个小数相加
+    public static double add (double x,double y){
+        return x+y ;
+    }
+4 int[] arr = {12, 23, 34, 52, 243, 23};（冒泡排序法）
+        System.out.println("冒泡排序前：");
+        printArray(arr);          //打印数组元素
+        bubbleSort(arr);         //调用排序方法
+        System.out.println("冒泡排序后：");
+        printArray(arr);          //打印数组元素
+    }
+    public static void printArray (int[] arr){
+        for(int i=0;i<arr.length;i++){
+            System .out.print(arr[i]+" ");
+        }
+        System.out.print("\n");
+    }
+    public static void bubbleSort(int[] arr){
+        for(int i=0;i<arr.length-1;i++){
+            for (int j=0;j<arr.length-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+            System.out.println("第"+(i+1)+"轮排序后：");
+            printArray(arr);
+        }

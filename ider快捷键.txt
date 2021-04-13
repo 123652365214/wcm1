@@ -1,0 +1,10 @@
+1.快速生成main方法：psvm
+2.快速生成输出：sout
+3.删除一行：Ctrl+y
+4.窗口变大变小Ctrl+Shift+F12
+5.任何新增/新建/添加快捷键Alt+Inster
+6.切换窗口Alt+左箭头 或者Alt+右箭头
+7.运行Ctrl+Shift+F10
+8.切换窗口Alt+标号
+9提示方法的参数Ctrl+p
+

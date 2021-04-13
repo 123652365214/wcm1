@@ -1,0 +1,13 @@
+* 向下转型养成好习惯，转型之前先if
+例如：
+Interface K{
+}
+Interface M{
+}
+class E implements M{
+}
+M m=new E();
+//K k=(K)m; 是m强制转换成k,但是不能直接这样写，容易出现异常
+If(m instenceof K){     //条件成立运行
+K k=(K)m;            //条件不成立跳过
+}

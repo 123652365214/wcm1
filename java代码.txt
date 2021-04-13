@@ -1,0 +1,231 @@
+*1 public class sss {
+    public sss (String name) {
+    System.out.println("小狗的名字是"+name);
+    }
+    public static void main(String[] args) {
+        sss my = new sss ("tomy");
+    }
+}
+
+
+
+
+
+ *2 public class kkk {
+    public static void main(String[] args) {
+        int[] x = {1546, 35431, 64, 65, 695, 454};
+        int max = getMax (x);
+        System.out.println("max=" + max);
+    }
+
+    public static int getMax(int[] x) {
+        int max = x[0];
+        for (int i = 1; i < x.length; i++) {
+            if (x[i] > max) {
+                max = x[i];
+            }
+        }
+        return max;
+    }
+}
+
+
+
+
+
+
+
+*3 package ch1;
+    public class sss {
+        int sssAge;
+        public sss (String name){
+            System.out.println("小狗的名字是"+name);
+        }
+        public void setAge (int age){
+           sssAge = age ;
+        }
+        public int getAge(){
+            System.out.println("小狗的年龄为："+sssAge);
+            return sssAge ;
+        }
+        public static void main(String [] args){
+            sss mysss = new sss ("tommy");
+            mysss.setAge(2);
+            mysss.getAge( );
+            System.out.println("变量值："+mysss.sssAge);
+        }
+    }
+
+
+
+
+
+
+
+
+
+*4 import java.io.*;
+public class EmployeeTest{
+ 
+   public static void main(String[] args){
+      /* 使用构造器创建两个对象 */
+      Employee empOne = new Employee("RUNOOB1");
+      Employee empTwo = new Employee("RUNOOB2");
+ 
+      // 调用这两个对象的成员方法
+      empOne.empAge(26);
+      empOne.empDesignation("高级程序员");
+      empOne.empSalary(1000);
+      empOne.printEmployee();
+ 
+      empTwo.empAge(21);
+      empTwo.empDesignation("菜鸟程序员");
+      empTwo.empSalary(500);
+      empTwo.printEmployee();
+   }
+}
+结果
+$ javac EmployeeTest.java
+$ java EmployeeTest 
+名字:RUNOOB1
+年龄:26
+职位:高级程序员
+薪水:1000.0
+名字:RUNOOB2
+年龄:21
+职位:菜鸟程序员
+薪水:500.0
+
+
+*5 public class Test {
+   public static void main(String args[]){
+      int [] numbers = {10, 20, 30, 40, 50};
+ 
+      for(int x : numbers ){
+         System.out.print( x );
+         System.out.print(",");
+      }
+      System.out.print("\n");
+      String [] names ={"James", "Larry", "Tom", "Lacy"};
+      for( String name : names ) {
+         System.out.print( name );
+         System.out.print(",");
+      }
+   }
+}
+结果
+10,20,30,40,50,
+James,Larry,Tom,Lacy,
+
+*6 public class Test {
+   public static void main(String args[]) {
+      int [] numbers = {10, 20, 30, 40, 50};
+ 
+      for(int x : numbers ) {
+         // x 等于 30 时跳出循环
+         if( x == 30 ) {
+            break;
+         }
+         System.out.print( x );
+         System.out.print("\n");
+      }
+   }
+}
+结果
+10
+20
+
+*7 public class Test {
+   public static void main(String args[]) {
+      int [] numbers = {10, 20, 30, 40, 50};
+ 
+      for(int x : numbers ) {
+         if( x == 30 ) {
+        continue;
+         }
+         System.out.print( x );
+         System.out.print("\n");
+      }
+   }
+}
+以上实例编译运行结果如下：
+10
+20
+40
+50
+
+*8 public class Test {  
+    public static void main (String []args)  
+    {  
+        System.out.println("90 度的正弦值：" + Math.sin(Math.PI/2));  
+        System.out.println("0度的余弦值：" + Math.cos(0));  
+        System.out.println("60度的正切值：" + Math.tan(Math.PI/3));  
+        System.out.println("1的反正切值： " + Math.atan(1));  
+        System.out.println("π/2的角度值：" + Math.toDegrees(Math.PI/2));  
+        System.out.println(Math.PI);  
+    }  
+}
+以上实例编译运行结果如下：
+90 度的正弦值：1.0
+0度的余弦值：1.0
+60度的正切值：1.7320508075688767
+1的反正切值： 0.7853981633974483
+π/2的角度值：90.0
+3.141592653589793
+
+*9 public class Main {   
+  public static void main(String[] args) {   
+    double[] nums = { 1.4, 1.5, 1.6, -1.4, -1.5, -1.6 };   
+    for (double num : nums) {   
+      test(num);   
+    }   
+  }   
+  
+  private static void test(double num) {   
+    System.out.println("Math.floor(" + num + ")=" + Math.floor(num));   
+    System.out.println("Math.round(" + num + ")=" + Math.round(num));   
+    System.out.println("Math.ceil(" + num + ")=" + Math.ceil(num));   
+  }   
+}
+以上实例执行输出结果为：
+Math.floor(1.4)=1.0
+Math.round(1.4)=1
+Math.ceil(1.4)=2.0
+Math.floor(1.5)=1.0
+Math.round(1.5)=2
+Math.ceil(1.5)=2.0
+Math.floor(1.6)=1.0
+Math.round(1.6)=2
+Math.ceil(1.6)=2.0
+Math.floor(-1.4)=-2.0
+Math.round(-1.4)=-1
+Math.ceil(-1.4)=-1.0
+Math.floor(-1.5)=-2.0
+Math.round(-1.5)=-1
+Math.ceil(-1.5)=-1.0
+Math.floor(-1.6)=-2.0
+Math.round(-1.6)=-2
+Math.ceil(-1.6)=-1.0
+
+*10 
+public class StringDemo{
+   public static void main(String args[]){
+      char[] helloArray = { 'r', 'u', 'n', 'o', 'o', 'b'};
+      String helloString = new String(helloArray);  
+      System.out.println( helloString );
+   }
+}
+以上实例编译运行结果如下：
+runoob
+
+*11 public class StringDemo {
+    public static void main(String args[]) {     
+        String string1 = "菜鸟教程网址：";     
+        System.out.println("1、" + string1 + "www.runoob.com");  
+    }
+}
+以上实例编译运行结果如下：
+1、菜鸟教程网址：www.runoob.com
+
+*12 
+
